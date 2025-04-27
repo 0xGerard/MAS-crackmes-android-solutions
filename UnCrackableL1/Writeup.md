@@ -7,7 +7,7 @@
 # Análisis inicial
 La aplicación nos solicita ingresar una clave
 
-![](./images/uncrackable1.png | width=100)
+<img src="./images/uncrackable1.png" width="100">
 
 Al ingresar cualquier clave nos que no es válida.
 ![](./images/uncrackable1-badmessage.png | width=100)
