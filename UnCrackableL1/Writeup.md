@@ -6,14 +6,15 @@
 
 # Análisis inicial
 La aplicación nos solicita ingresar una clave
-![](./images/uncrackable1.png)
+
+![](./images/uncrackable1.png | width=100)
 
 Al ingresar cualquier clave nos que no es válida.
-![](./images/uncrackable1-badmessage.png)
+![](./images/uncrackable1-badmessage.png | width=100)
 
 # Análisis estático
 Abrimos la aplicación con `jadx-gui`, selecionamos el archivo `AndroidManifest.xml` y  nos dirigimos a `MainActivity`.
-![](./images/jadx-manifest.png)
+![](./images/jadx-manifest.png | width=100)
 
 El método `verify` verifica si la clave ingresada es correcta. Si cumple la condiccional donde `a.a(obj)` retorne verdadero, obtendremos el mensaje indicando que la clave es correcta.
 ![](./images/verify.png)
