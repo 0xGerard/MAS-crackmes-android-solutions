@@ -65,7 +65,7 @@ class Main {
     }
 }
 ```
-![](./images/secretkey-cracked)
+![](./images/secretkey-cracked.png)
 
 Ingresamos la clave obtenida y .. B00M!
 
