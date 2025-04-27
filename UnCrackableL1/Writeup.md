@@ -16,7 +16,7 @@ Al ingresar cualquier clave, nos indica que no es válida.
 # Análisis estático
 Abrimos la aplicación con `jadx-gui`, selecionamos el archivo `AndroidManifest.xml` y  nos dirigimos a `MainActivity`.
 
-![](./images/jadx-manifest.png | width=100)
+![](./images/jadx-manifest.png)
 
 El método `verify` verifica si la clave ingresada es correcta. Si cumple la condiccional donde `a.a(obj)` retorne verdadero, obtendremos el mensaje indicando que la clave es correcta.
 
