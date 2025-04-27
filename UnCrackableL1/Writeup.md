@@ -9,7 +9,7 @@ La aplicación nos solicita ingresar una clave
 
 <img src="./images/uncrackable1.png" width="300">
 
-Al ingresar cualquier clave nos que no es válida.
+Al ingresar cualquier clave, nos indica que no es válida.
 
 <img src="./images/uncrackable1-badmessage.png" width="300" >
 
