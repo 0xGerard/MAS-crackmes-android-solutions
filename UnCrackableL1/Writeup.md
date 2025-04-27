@@ -7,24 +7,29 @@
 # Análisis inicial
 La aplicación nos solicita ingresar una clave
 
-<img src="./images/uncrackable1.png" width="100">
+<img src="./images/uncrackable1.png" width="300">
 
 Al ingresar cualquier clave nos que no es válida.
-![](./images/uncrackable1-badmessage.png | width=100)
+
+<img src="./images/uncrackable1-badmessage.png" width="300" >
 
 # Análisis estático
 Abrimos la aplicación con `jadx-gui`, selecionamos el archivo `AndroidManifest.xml` y  nos dirigimos a `MainActivity`.
+
 ![](./images/jadx-manifest.png | width=100)
 
 El método `verify` verifica si la clave ingresada es correcta. Si cumple la condiccional donde `a.a(obj)` retorne verdadero, obtendremos el mensaje indicando que la clave es correcta.
+
 ![](./images/verify.png)
 
 La funcion `a` acepta la clave ingresada y es comparada con `bArr`. `bArr` almancena la clave secreta que es generada por el método `sg.vantagepoint.a.a.a`. Esta funcion recibe dos parametros:
 - El primero una cadena generada a partir de la funciona `b`, que también recibe una cadena como argumento.
 - El segundo un código en base64 que se decodificado.
+
 ![](./images/generate-verify.png)
 
 Finalmente,la función `sg.vantagepoint.a.a.a` realiza una serie de operaciones de cifrado sobre los parámetros recibidos. No entraremos en detalle sobre su funcionamiento interno, ya que no es necesario para resolver el reto.
+
 ![](./images/cypher.png)
 
 
@@ -63,4 +68,5 @@ class Main {
 ![](./images/secretkey-cracked)
 
 Ingresamos la clave obtenida y .. B00M!
-![](./images/uncrackable1-cracked.png)
+
+<img src="./images/uncrackable1-cracked.png" width="300">
